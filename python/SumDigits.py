@@ -8,6 +8,6 @@ sumDigits(12) → 3
 """
 
 def sumDigits(num):
-	if int(num/10) == 0:
+	if num//10 == 0:
 		return num
 	return (num%10) + sumDigits(int(num/10))
